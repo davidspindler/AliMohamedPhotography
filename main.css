@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --white: #ddd;
+    --white: #111;
     --dark: #111;
     --darkGrey: #474b4f;
     --lightGrey: #6b6e70;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: #fff;
 }
 .active{
-    color: var(--lightGreen)!important;
+    color: var(--lightGreen) !important;
 }
 
 /**************** end of Utility Classes *******************/
@@ -73,7 +73,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
     min-height: 120vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
     color: #fff;
 }
 .flex233 {
@@ -84,10 +83,10 @@ h1, h2, h3, h4, h5, h6, p{
     margin-top: 30px;
 }
 .top-nav a{
-    color: #fff;
+    color: black;
 }
 .brand-and-navBtn{
-    background: #000;
+    background: #fff;
     position: relative;
     z-index: 999;
     height: 90px;
@@ -111,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .navBtn:hover{
     background: #fff;
-    color: #000;
+    color: blue;
     transition: var(--transition);
 }
 .top-nav{
@@ -128,6 +127,16 @@ h1, h2, h3, h4, h5, h6, p{
 .top-nav ul li{
     padding: 10px 0;
 }
+@media screen and (max-width: 991px) {
+    .top-nav ul {
+        background-image: linear-gradient(white 10%, rgb(237, 164, 255) 85%);
+    } 
+}
+/* 
+.top-nav ul {
+    background-image: linear-gradient( rgb(255, 255, 255) 20%, rgb(213, 151, 248) 80%)
+}
+*/
 .top-nav ul a{
     position: relative;
     font-weight: 500;
@@ -151,6 +160,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .about{
     margin-top: -250px;
+    color: black;
+}
+#Phostext{
+    color: black;
 }
 .about-content img{
     width: 140px;
