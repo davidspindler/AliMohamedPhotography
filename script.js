@@ -11,6 +11,20 @@ showBtn.addEventListener('click', function(){
     }
 });
 
+const blurDivs = document.querySelectorAll(".blur-load")
+blurDivs.forEach(div => {
+    const img = div.querySelector("img")
+    function loaded() {
+        // show imaage
+        console.log('this is being rna')
+        div.classList.add('loaded')
+    }
+    if (img.complete) {
+        loaded()
+    } else {
+        img.addEventListener('load', loaded)
+    }
+})
 // document.addEventListener("DOMContentLoaded", function() {
 //     console.log("hi")
 //     let images = Array.from(document.querySelectorAll('img[data-order]')).sort((a, b) => {
