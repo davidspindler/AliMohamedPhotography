@@ -18,9 +18,10 @@
 body{
     line-height: 1.6;
 }
-img{
+.imageshome{
     width: 100%;
     display: block;
+    height:auto;
 }
 ul li{
     list-style: none;
